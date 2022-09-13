@@ -58,6 +58,11 @@ public class Player : MonoBehaviour
         moveable = true;
     }
 
+    public void FixMovement()
+    {
+        correctMovement = true;
+    }
+
     private void SetUpMoveBoundaries()
     {
         Camera gameCamera = Camera.main;

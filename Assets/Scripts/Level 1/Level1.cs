@@ -11,12 +11,14 @@ public class Level1 : MonoBehaviour
     [SerializeField] GameObject redPill;
     [SerializeField] GameObject bluePill;
     [SerializeField] Player player;
+    [SerializeField] GameObject exitButton;
 
     [SerializeField] float waitBetweenChars;
     [SerializeField] float waitBetweenLines;
 
     State state;
     bool finishedTalking = false;
+    bool greenPillPicked = false;
 
     void Start()
     {
@@ -34,20 +36,29 @@ public class Level1 : MonoBehaviour
         var nextStates = state.GetNextStates();
         if(finishedTalking == true)
         {
-            if (Input.GetKeyDown(KeyCode.G))
+            if (Input.GetKeyDown(KeyCode.G) && greenPillPicked == false)
             {
                 state = nextStates[0];
                 StartCoroutine(ShowText(state));
+                greenPillPicked = true;
             }
-            else if (Input.GetKeyDown(KeyCode.W))
+            else if (Input.GetKeyDown(KeyCode.W) && greenPillPicked == false)
             {
-                finishedTalking = false;
                 state = nextStates[1];
                 StartCoroutine(ShowText(state));
-                if(finishedTalking == true)
-                {
-                    player.EnableMovement();
-                }
+                player.EnableMovement();
+            }
+            else if (Input.GetKeyDown(KeyCode.Y) && greenPillPicked == true)
+            {
+                state = nextStates[0];
+                StartCoroutine(ShowText(state));
+                StartCoroutine(ShowExitButton());
+            }
+            else if (Input.GetKeyDown(KeyCode.N) && greenPillPicked == true)
+            {
+                state = nextStates[1];
+                StartCoroutine(ShowText(state));
+                player.EnableMovement();
             }
         }
     }
@@ -72,5 +83,11 @@ public class Level1 : MonoBehaviour
         {
             finishedTalking = true;
         }
+    }
+
+    IEnumerator ShowExitButton()
+    {
+        yield return new WaitForSeconds(10f);
+        exitButton.SetActive(true);
     }
 }

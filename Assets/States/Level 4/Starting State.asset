@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a35608e548803e45b5e9cf749e191fb, type: 3}
+  m_Name: Starting State
+  m_EditorClassIdentifier: 
+  stateText: "Congrats! \n\nYou've completed what's in the game up until this point...\n\nThe
+    last line of code I have here is:\n//I wish I had more time\n\nToo bad bud. \nBut
+    don't be discouraged, finish this up when you find your time...\n\nUntil then,
+    see ya!"
+  nextStates: []

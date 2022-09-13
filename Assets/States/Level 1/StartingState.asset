@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a35608e548803e45b5e9cf749e191fb, type: 3}
   m_Name: StartingState
   m_EditorClassIdentifier: 
-  stateText: "Hello!\n\nI know you must have a lot of questions. \nWhere am I? \nWho
-    is this text that's talking to me? \nWhy am I a QR code to a subpar video game
-    repository? \n\nThose are all valid questions, and they shall be answered in
-    time. \nBut to find the answers, you must walk the path of enlightment. \nAnd
-    to do that you need to chose. \n\nThe white pill, or the green pill.\n\nWhat...
-    You were expecting red and blue pills? \nWell, it's kinda copywritten by The
-    Matrix, and the whole red pill concept has been ruined by... \nYou know what,
-    I don't need to explain myself to you.\nIt's how I do it, green and white. \n\nGreen
-    brings you back to your boring life, and white shows you the truth down the racoon
-    hatch. \n(Again, copywrite, don't get me started).\n\nSo, what shall it be my
-    monochromatic friend?"
+  stateText: "Hello!\r\n\nI know you must have a lot of questions. \r\nWhere am I?
+    \r\nWho is this text that's talking to me? \r\nWhy am I a QR code to a subpar
+    video game repository?\n\nThose are all valid questions, and they shall be answered
+    in time. \r\nBut to find the answers, you must walk the path of enlightment.
+    \r\nAnd to do that you need to chose. \r\n\nThe white pill, or the green pill.\r\n\nWhat...
+    You were expecting red and blue pills? \r\nWell, it's kinda copywritten by The
+    Matrix, and the whole red pill concept has been ruined by... \r\nYou know what,
+    I don't need to explain myself to you.\r\nIt's how I do it, green and white.
+    \r\n\nGreen brings you back to your boring life, and white shows you the truth
+    down the racoon hatch. \r\n(Again, copywrite, don't get me started).\r\n\nSo,
+    what shall it be my monochromatic friend?\r\n\n(W)hite or (G)reen?"
   nextStates:
-  - {fileID: 11400000, guid: b52b8cd4fa0866d47958136a272496e9, type: 2}
+  - {fileID: 11400000, guid: 6730288b81363254187b27c20bedc1ec, type: 2}
   - {fileID: 11400000, guid: 44225b63fb0089d40863df49405c5211, type: 2}
